@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.blazemeter</groupId>
     <artifactId>jmeter-plugins-random-csv-data-set</artifactId>
-    <version>0.9</version>
+    <version>0.8</version>
     <name>Random CSV Data Set</name>
     <description>Config item that allows reading CSV files in random order</description>
     <licenses>
@@ -19,9 +17,10 @@
     <url>http://jmeter-plugins.org/</url>
     <scm>
         <url>https://github.com/blazemeter/jmeter-bzm-plugins</url>
-        <connection>https://github.com/blazemeter/jmeter-bzm-plugins.git</connection>
-        <developerConnection>git@github.com:blazemeter/jmeter-bzm-plugins.git</developerConnection>
-    </scm>
+        <connection>https://git@github.com/blazemeter/jmeter-bzm-plugins.git</connection>
+        <developerConnection>https://git@github.com/blazemeter/jmeter-bzm-plugins.git</developerConnection>
+      <tag>jmeter-plugins-random-csv-data-set-0.8</tag>
+  </scm>
     <developers>
         <developer>
             <id>team</id>
