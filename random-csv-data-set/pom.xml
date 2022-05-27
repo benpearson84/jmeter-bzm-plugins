@@ -4,7 +4,7 @@
 
     <groupId>com.blazemeter</groupId>
     <artifactId>jmeter-plugins-random-csv-data-set</artifactId>
-    <version>0.8</version>
+    <version>0.9-SNAPSHOT</version>
     <name>Random CSV Data Set</name>
     <description>Config item that allows reading CSV files in random order</description>
     <licenses>
@@ -17,8 +17,8 @@
     <url>http://jmeter-plugins.org/</url>
     <scm>
         <url>https://github.com/blazemeter/jmeter-bzm-plugins</url>
-        <connection>https://git@github.com/blazemeter/jmeter-bzm-plugins.git</connection>
-        <developerConnection>https://git@github.com/blazemeter/jmeter-bzm-plugins.git</developerConnection>
+        <connection>scm:git:https://dnyaneshnagre@github.com/blazemeter/jmeter-bzm-plugins.git</connection>
+        <developerConnection>scm:git:https://dnyaneshnagre@github.com/blazemeter/jmeter-bzm-plugins.git</developerConnection>
       <tag>jmeter-plugins-random-csv-data-set-0.8</tag>
   </scm>
     <developers>
@@ -50,6 +50,35 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>release-sign-artifacts</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <dependencies>
         <dependency>
